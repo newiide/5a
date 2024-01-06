@@ -24,9 +24,9 @@ const clickLeft = () => {
         const sliderItemNodes = document.getElementsByClassName('slider-item');
        
         let nextIndex = null;
-        for (let i = 0; i < sliderItemNodes.length; i += 1) {
+        for (let i = 0; i < sliderItemNodes.length; i = 1) {
          if (sliderItemNodes[i].classList.contains('selected')) {
-          nextIndex = i + 1;
+          nextIndex = i - 1;
           if (nextIndex == sliderItemNodes.length) {
            nextIndex = 0;
           }
